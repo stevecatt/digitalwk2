@@ -4,13 +4,13 @@
 stores = []
 store_names = []
 #grocery_items = []
-
+total = []
 
 menu_entry = " "
 
 
 class Store:
-    def __init__(self,store_name,store_description = "TX"):
+    def __init__(self,store_name,store_description):
         self.store = store_name
         self.desc = store_description
         #putting the lists made from produce entry into here with add_item()
@@ -21,6 +21,13 @@ class Store:
         print(f"{self.store}, {self.desc}")
         #for i in range(len(self.list)):
              #print(f"{self.list[i]}")
+    def price_total(self):
+        list_price_total = 0
+        for grocery_item in self.grocery_items:
+        #for item in self.grocery_items.price():
+            list_price_total += grocery_item.price
+        print(list_price_total)    
+
 
        
       
@@ -46,18 +53,28 @@ class Produce:
         #print(self.item)
 
 
-def price_total():
-    total = 0
+def price_total_outside():
+    #this seems to work need to add totals of totals and fancy multipliers to sum total 
     
     for index in range (0,len(stores)):
         shop = stores[index]
-        #print(f"{index+1} - {shop.store} - {shop.desc}")
-        for grocery_item in shop.grocery_items:
-            print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
-            total = grocery_item.price + grocery_item.price
-            return total
-    print(total)
+        
+       
+        print(f"Total for {index+1} - {shop.store} - {shop.desc}=")
+        shop.price_total()
+        #for grocery_item in shop.grocery_items:
+         #   print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
+          #  total.append(grocery_item.price)
+           # print(total)
             
+    #print(total)
+
+
+def sum_total():
+    sum = 0
+    for s in range(0,len(total)):
+        sum = sum + total[s]
+    print(sum)    
 
 
 
@@ -158,6 +175,7 @@ while menu_entry != "q":
 
     elif menu_entry == "3":
         view_stores()
+        
         show_menu()
 #should put all the rest of this in a function 
         #produce_item = input("please enter item ")
@@ -178,9 +196,9 @@ while menu_entry != "q":
 
 
 
+price_total_outside()
+#sum_total()
+#print(total)
 
-price_total()
-
-
-view_shop()
-view_stores()
+#view_shop()
+#view_stores()

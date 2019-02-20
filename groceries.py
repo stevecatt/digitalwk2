@@ -6,34 +6,65 @@ store_names = []
 grocery_list = []
 
 
-menu_entry = ""
+menu_entry = " "
 
 
 class Store:
-    def __init__(self,store_name,store_description):
+    def __init__(self,store_name,store_description= "TX"):
         self.store = store_name
         self.desc = store_description
-        self.list= []
+        #putting the lists made from produce entry into here with add_item()
+        self.gro_list= []
 
     def print_store(self):
-        print(self.store, self.desc, self.list)
+        print(f"{self.store}, {self.desc}")
+        #for i in range(len(self.list)):
+             #print(f"{self.list[i]}")
 
+       
+      # i neew to figure out the printing atuff
+      #     
     def add_item(self):
-        self.list.append()
+        self.gro_list.append(grocery_item)
+        #for x in self.list:
+           #  print(f"{self.list[x]}")
+
+    def print_lists(self):
+        for l in self.gro_list:
+            print (l)
+
 
     
 
 
 class Produce:
     def __init__(self,item,price,quantity,store):
+
         self.item=item
         self.price=price
         self.quantity=quantity
         self.store = store
 
     def print_grocery(self):
-        print(f"{self.store} {self.item} $ {self.price} Qty {self.quantity}")
+        print(f"{self.store} {self.item} ${self.price} Qty X{self.quantity}")
+        #y= f"{self.store} this is tha funct{self.item} ${self.price} Qty X{self.quantity}"
+        #print(y)
+
         #print(self.item)
+
+
+
+class Shopping:
+    def __init__(self, store, groceries):
+        self.store = []
+        self.groceries = []
+
+    def print_lists(self):
+        for store in self.store:
+            print (store)
+
+
+
 
 
 
@@ -44,14 +75,23 @@ def show_menu():
     print("press q to end list")
 
 
-#def view_all_lists():
+def view_all_lists():
+    for list in list_of_stores:
+        print(f" {list.store} {list.desc}")
+        for prod in grocery_store_name.gro_list:
+            print(f"{prod.list}")
 
 
 
 def view_lists():
-    for i in range (len(store_names)):
+    for index in range (len(store_names)):
         
-        print(f"{i+1} - {store_names[i]}")
+        print(f"{index+1} - {store_names[index]}")
+    #for l in range(list_of_stores):
+        #print(grocery_store_name.list(l))
+    for l in  grocery_store_name.gro_list:
+        print(l)
+
 
 #def select_store():
     
@@ -91,17 +131,25 @@ while menu_entry != "q":
         view_lists()
         #select_store()
         store_id= int(input("Please input number of store  from list "))
-        store_list= (store_names[store_id -1])
+        #need to modify this to get response if wrong number is entered
+        #think a while loop is needed
+        
+        if store_id > (len(store_names)):
+            print("please enter a valid list number")
+        else:
+            store_list= (store_names[store_id -1])
+            print(store_list) #just checking to see what we are gonna input 
    
-
+#should put all the rest of this in a function 
         produce_item = input("please enter item ")
         produce_cost = input("please enter product cost  ")
         produce_quantity = input("please enter product quantity  ")
         grocery_item = Produce(produce_item,produce_cost,produce_quantity,store_list)
         grocery_item.print_grocery()
-        grocery_list.append(grocery_item)
+        grocery_store_name.gro_list.append(grocery_item)
         #grocery_store_name.add_item(grocery_item)
-        
+        grocery_store_name.store = store_list
+        grocery_store_name.add_item()
 
         show_menu()
 
@@ -109,23 +157,29 @@ while menu_entry != "q":
         for grocery in grocery_list:
 
             grocery.print_grocery()
-    show_menu()
+
+            view_lists()
+    #show_menu()
 
 
 
 
 
 for grocery in grocery_list:
+    print(f"{grocery_item.store} {grocery_item.item}")
 
-    grocery.print_grocery()
+    #grocery.print_grocery()
 
 
 for store in list_of_stores:
-    store.print_store()
+    print (store)
+    
+
+    
 
 
-for item in store_names:
-    store.print_store
+#for item in store_names:
+   # store.print_store
     
 
 #meat.print_grocery()
@@ -137,4 +191,4 @@ for item in store_names:
 
 #print (list_of_stores)
 #print(store_name.store)
-#view_lists()
+view_all_lists()
