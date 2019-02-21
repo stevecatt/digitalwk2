@@ -2,9 +2,9 @@
 #store = 1 #placeholder 
 
 stores = []
-store_names = []
+#store_names = []
 #grocery_items = []
-total = []
+#total = [] # used with now defunked sum finction 
 
 menu_entry = " "
 
@@ -26,7 +26,43 @@ class Store:
         for grocery_item in self.grocery_items:
         #for item in self.grocery_items.price():
             list_price_total += grocery_item.price
-        print(list_price_total)    
+        #print(list_price_total)  
+        print(f"The total cost by items is $ {list_price_total}" ) 
+  
+
+
+    def price_total_inside(self):
+        for index in range (0,len(stores)):
+            shop = stores[index]
+        
+       
+            print(f"Total for {index+1} - {self.store} - {self.desc}=")
+            self.price_total()
+    
+    def price_by_quantity(self):
+        quant_price_total = 0
+        for grocery_item in self.grocery_items:
+        #for item in self.grocery_items.price():
+            quant_price_total += grocery_item.price * grocery_item.quantity
+        print(f"The total by items * quantity is $ {quant_price_total}" ) 
+
+    def view_lists_inside(self):
+        for grocery_item in self.grocery_items:
+            print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
+
+
+class List():
+    def __init__(self,name):
+        self.name = name
+        self.shops = []
+
+    #def price_total_inside(self):
+        #for index in range (0,len(self.shops)):
+            #shop = shops[index]
+        
+       
+            #print(f"Total for {index+1} - {self.shops} - {self.shops.desc}=")
+            #self.price_total()
 
 
        
@@ -55,13 +91,17 @@ class Produce:
 
 def price_total_outside():
     #this seems to work need to add totals of totals and fancy multipliers to sum total 
-    
+    #grand_price_total = 0
     for index in range (0,len(stores)):
         shop = stores[index]
         
        
-        print(f"Total for {index+1} - {shop.store} - {shop.desc}=")
+        print(f" The Total for {shop.store}= ")
         shop.price_total()
+        shop.price_by_quantity()
+        #grand_price_total += shop.grocery_item.price * shop.grocery_item.quantity
+
+   #print(grand_price_total)
         #for grocery_item in shop.grocery_items:
          #   print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
           #  total.append(grocery_item.price)
@@ -70,11 +110,11 @@ def price_total_outside():
     #print(total)
 
 
-def sum_total():
-    sum = 0
-    for s in range(0,len(total)):
-        sum = sum + total[s]
-    print(sum)    
+#def sum_total():
+ #   sum = 0
+  #  for s in range(0,len(total)):
+   #     sum = sum + total[s]
+    #print(sum)    
 
 
 
@@ -103,19 +143,29 @@ def view_stores():
     for index in range (0,len(stores)):
         shop = stores[index]
         print(f"{index+1} - {shop.store} - {shop.desc}")
-        for grocery_item in shop.grocery_items:
-            print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
+        #moved function to inside class Store
+        shop.view_lists_inside()
+    
+        #for grocery_item in shop.grocery_items:
+            #print(f"  {grocery_item.item} - {grocery_item.price} - {grocery_item.quantity} ")
             #sum_price = grocery_item.price += grocery_item.price
     #for l in range(list_of_stores):
         #print(grocery_store_name.list(l))
     #for l in  grocery_store_name.gro_list:
-        #print(l)
+
+
+def add_shop_list():
+    shop_list = input("Please enter list name    "   )   #print(l)
+    list=List(shop_list)
 
 def add_store():
     store_name = input("Please enter store name    "   )
     store_desc = input("Please enter store description   ")
     shop = Store(store_name,store_desc)
+    
+    
     stores.append(shop)
+    
     #this is a little superfluous but i needed it before i figured out index
     #store_names.append(grocery_store_name)
 
@@ -153,6 +203,7 @@ while menu_entry != "q":
     menu_entry = input("Please enter choice   ")
     if menu_entry == "1":
         view_stores()
+        add_shop_list()
         add_store()
         #store_name = input("Please enter store name    "   )
         #store_desc = input("Please enter store description   ")
@@ -195,7 +246,7 @@ while menu_entry != "q":
     #show_menu()
 
 
-
+#shop.price_total_inside()
 price_total_outside()
 #sum_total()
 #print(total)
