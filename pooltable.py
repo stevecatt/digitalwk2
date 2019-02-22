@@ -3,12 +3,13 @@
 import time
 import datetime
 import json
-
+from datetime import date
+today = date.today()
 pool_tables = []
-
+tables_as_dict = []
 localtime = time.asctime( time.localtime(time.time()) )
 print ("Local current time :", localtime)
-print((datetime.datetime.now()))
+#print((datetime.datetime.now()))
 
 
 
@@ -16,8 +17,8 @@ class Pooltable:
     def __init__(self,table_number):
         self.table_number = table_number
         self.occupied = False
-        self.start_time= datetime.datetime.now()
-        self.end_time = datetime.datetime.now()
+        self.start_time= 0
+        self.end_time = 0
         self.elapsed_time = 0
         self.float_start_time = time.time()
         self.float_end_time = time.time()
@@ -29,17 +30,19 @@ class Pooltable:
         #self.check_table() gets overridden so ignoring for now 
         self.occupied = True
         print(f"Table {self.table_number} is Now Assigned")
-        start_time = datetime.datetime.now()    
+        now= datetime.datetime.now()    
+        self.start_time= now.strftime("%H:%M:%S")
         self.float_start_time = time.time()#time.asctime( time.localtime(time.time()) )
-        print(f"start time is {start_time}")
-        self.start_time = start_time
+        print(f"start time is {self.start_time}")
+        #self.start_time = start_time
         
 
     def release_table(self):
         #self.check_table()# this is being overridden when in assign table 
         self.occupied = False
         print(f"Table {self.table_number} is Now Available")
-        self.end_time = datetime.datetime.now()#time.asctime( time.localtime(time.time()) )
+        now= datetime.datetime.now()
+        self.end_time = now.strftime("%H:%M:%S") #time.asctime( time.localtime(time.time()) )
         self.float_end_time = time.time()#time.asctime( time.localtime(time.time()) )
         print(f" Table free at {self.end_time}")
         self.time_occupied()
@@ -58,7 +61,7 @@ class Pooltable:
         print(f" Table {self.table_number} has been in use since {self.start_time} for {self.elapsed_time} Minutes")
         #print(f' Table {self.table_number} has been used {self.use_count} times for a total of {self.total_use_time} minutes')
     def as_string(self):
-        return "\nTable #: {0}\nStart time: {1}\nEnd time: {2}\nTotal time: {3} minutes\n #Times used {4}" .format(self.table_number,self.start_time,self.end_time,self.total_use_time, self.use_count)
+        return "\nTable #: {0}\nStart time: {1}\nEnd time: {2}\nTotal time: {3} minutes\nTimes used {4}\n\n" .format(self.table_number,self.start_time,self.end_time,self.total_use_time, self.use_count)
 
     def use_counter(self):
         self.time_occupied()
@@ -73,7 +76,9 @@ def check_table():# this is being overridden when in assign table forgetting abo
     table_id= int(input("Please input number of Table from list "))
     table = (pool_tables[table_id -1])
     if table.occupied == True: 
-        print("The table is already occupied")
+        print("*********************************")
+        print("!!The table is already occupied!!")
+        print("*********************************")
         show_menu()
             
             
@@ -95,14 +100,18 @@ def select_table_assign():
         table = (pool_tables[table_id -1])
         #add the check function in here 
         if table.occupied == True:
-            print ("That table is already assigned")
+            print("*********************************")
+            print("!!The table is already occupied!!")
+            print("*********************************")
+            
+    
+
+        else :
+            table.assign_table()
     except ValueError:
         print("Enter a number") 
-
-    else :
-
-        table.assign_table()
-    #print(f"Please select table - ")
+        
+   
 
 def select_table_release():
     for index in range(0, len(pool_tables)):
@@ -112,8 +121,10 @@ def select_table_release():
     table_id= int(input("Please input number of Table from list "))
     table = (pool_tables[table_id -1])
     if table.occupied == False:
-        print ("That table is already Open")
-        
+        print("*******************************")
+
+        print ("!!That table is already Open!!")
+        print("*******************************")
 
     else :
         table.release_table()
@@ -144,7 +155,7 @@ def write_all_out():
     for table in pool_tables:
         print(f' Table {table.table_number} has been used {table.use_count} times for a total of {table.total_use_time} minutes')#if table.occupied == False:
         #print(f"Table Number {table.table_number}   {table.elapsed_time}'     '  {table.start_time} is Free")
-        with open ("pool1.txt ","a") as file_object:
+        with open (f"{today}.txt","a") as file_object:
             #writes the table out to text file 
             file_object.write(table.as_string())
         
@@ -165,15 +176,32 @@ def clear_all_tables_release():
             table.release_table()
             print ("closing all tables")
 
+def write_to_json():
+    tables_as_dict.append(table.__dict__)
+    with open(f"{today}.json", "w") as file_object:
+        json.dump(tables_as_dict,file_object, indent=2)
+
 
 menu_entry = " "
+print("*******************************")
 print("Initializing Pool Tables")
-
+print("*******************************")
 
 for index in range (1,13):
     table = Pooltable(index)
     pool_tables.append(table)
+    tables_as_dict.append(table.__dict__)
 
+try:
+    with open(f"{today}.json","r") as file_object:
+        loaded_tables = json.load(file_object)
+        for i in range(len(pool_tables)):
+            pool_tables[i].occupied = loaded_tables[i]['occupied']
+            pool_tables[i].start_time = loaded_tables[i]['start_time']
+except:
+    write_to_json()
+    #with open("poolapp.json", "w") as file_object:
+     #   json.dump(tables_as_dict,file_object, indent=2)
 
 while menu_entry != "q":
     show_menu()
@@ -187,12 +215,20 @@ while menu_entry != "q":
         #check_table()
         view_table_status_free()
         select_table_assign()
+        write_to_json()
+        #tables_as_dict.append(table.__dict__)
+        #with open("poolapp.json", "w") as file_object:
+         #   json.dump(tables_as_dict,file_object, indent=2)
         #view_table_status()
 
     elif menu_entry == "3":
         view_table_status_occupied()
         select_table_release()
         view_table_status()
+        write_to_json()
+        #tables_as_dict.append(table.__dict__)
+        #with open("poolapp.json", "w") as file_object:
+            #json.dump(tables_as_dict,file_object, indent=2)
         #view_all_out(
     elif menu_entry == "4":
         view_update_in_use_time()
@@ -203,7 +239,7 @@ while menu_entry != "q":
 clear_all_tables_release()
 view_update_in_use_time()
 #table.as_string()  
-
+write_to_json()
 write_all_out()      
 
 
