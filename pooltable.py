@@ -93,6 +93,8 @@ def check_table():# this is being overridden when in assign table forgetting abo
             show_menu()
     except ValueError:
         print("Enter a number") 
+    except IndexError:
+        print("Number out of range there are only 12 pool tables") 
             
             
 
@@ -127,6 +129,8 @@ def select_table_assign():
             table.assign_table()
     except ValueError:
         print("Enter a number") 
+    except IndexError:
+        print("There are only 12 pool tables")
         
    
 
@@ -148,6 +152,9 @@ def select_table_release():
     #print(f"Please select table - ")
     except ValueError:
         print("Enter a number") 
+    except IndexError:
+        print("There are only 12 pool tables")
+        
         
 
 def view_table_status():
