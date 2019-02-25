@@ -1,0 +1,777 @@
+
+Table #: 1
+Start time: 07:22:40
+End time: 07:32:53
+Total time: 10 minutes
+Times used 1
+
+
+Table #: 2
+Start time: 07:22:42
+End time: 07:32:53
+Total time: 10 minutes
+Times used 1
+
+
+Table #: 3
+Start time: 07:22:43
+End time: 07:32:53
+Total time: 10 minutes
+Times used 1
+
+
+Table #: 4
+Start time: 07:22:45
+End time: 07:32:53
+Total time: 10 minutes
+Times used 1
+
+
+Table #: 5
+Start time: 07:22:59
+End time: 07:32:53
+Total time: 10 minutes
+Times used 1
+
+
+Table #: 6
+Start time: 07:20:21
+End time: 07:32:53
+Total time: 13 minutes
+Times used 1
+
+
+Table #: 7
+Start time: 07:20:24
+End time: 07:32:53
+Total time: 12 minutes
+Times used 1
+
+
+Table #: 8
+Start time: 07:20:47
+End time: 07:32:53
+Total time: 12 minutes
+Times used 1
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 07:34:48
+End time: 07:38:25
+Total time: 4 minutes
+Times used 1
+
+
+Table #: 2
+Start time: 07:34:50
+End time: 07:37:44
+Total time: 3 minutes
+Times used 1
+
+
+Table #: 3
+Start time: 07:35:01
+End time: 07:41:16
+Total time: 6 minutes
+Times used 1
+
+
+Table #: 4
+Start time: 07:35:02
+End time: 07:41:16
+Total time: 6 minutes
+Times used 1
+
+
+Table #: 5
+Start time: 07:35:03
+End time: 07:41:16
+Total time: 6 minutes
+Times used 1
+
+
+Table #: 6
+Start time: 07:35:04
+End time: 07:41:16
+Total time: 6 minutes
+Times used 1
+
+
+Table #: 7
+Start time: 07:20:24
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 07:20:47
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 08:33:37
+End time: 08:35:57
+Total time: 2 minutes
+Times used 1
+
+
+Table #: 2
+Start time: 08:25:15
+End time: 08:35:57
+Total time: 11 minutes
+Times used 1
+
+
+Table #: 3
+Start time: 08:31:44
+End time: 08:35:57
+Total time: 4 minutes
+Times used 1
+
+
+Table #: 4
+Start time: 08:25:16
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 5
+Start time: 08:25:17
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 6
+Start time: 07:35:04
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 7
+Start time: 07:20:24
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 07:20:47
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 08:37:27
+End time: 08:56:39
+Total time: 19 minutes
+Times used 2
+
+
+Table #: 2
+Start time: 08:37:28
+End time: 08:56:48
+Total time: 19 minutes
+Times used 2
+
+
+Table #: 3
+Start time: 08:37:31
+End time: 08:56:48
+Total time: 19 minutes
+Times used 2
+
+
+Table #: 4
+Start time: 08:37:06
+End time: 08:56:48
+Total time: 20 minutes
+Times used 1
+
+
+Table #: 5
+Start time: 08:37:06
+End time: 08:56:48
+Total time: 20 minutes
+Times used 1
+
+
+Table #: 6
+Start time: 08:37:07
+End time: 08:56:48
+Total time: 20 minutes
+Times used 1
+
+
+Table #: 7
+Start time: 08:37:57
+End time: 08:56:48
+Total time: 20 minutes
+Times used 2
+
+
+Table #: 8
+Start time: 08:54:31
+End time: 08:56:48
+Total time: 2 minutes
+Times used 1
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 08:37:27
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 2
+Start time: 08:37:28
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 3
+Start time: 08:37:31
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 4
+Start time: 08:37:06
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 5
+Start time: 08:37:06
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 6
+Start time: 08:37:07
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 7
+Start time: 08:37:57
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 08:54:31
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 13
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 14
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 15
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 16
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 17
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 18
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 19
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 08:37:27
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 2
+Start time: 08:37:28
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 3
+Start time: 08:37:31
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 4
+Start time: 08:37:06
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 5
+Start time: 08:37:06
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 6
+Start time: 08:37:07
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 7
+Start time: 08:37:57
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 08:54:31
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 13
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 14
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 15
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 16
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 17
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 18
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 19
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 20
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 13:54:38
+End time: 13:56:18
+Total time: 2 minutes
+Times used 1
+
+
+Table #: 2
+Start time: 13:54:36
+End time: 13:54:44
+Total time: 0 minutes
+Times used 1
+
+
+Table #: 3
+Start time: 13:54:39
+End time: 13:56:18
+Total time: 2 minutes
+Times used 1
+
+
+Table #: 4
+Start time: 13:54:40
+End time: 13:56:18
+Total time: 2 minutes
+Times used 1
+
+
+Table #: 5
+Start time: 08:37:06
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 6
+Start time: 08:37:07
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 7
+Start time: 08:37:57
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 08:54:31
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 1
+Start time: 14:50:26
+End time: 14:50:39
+Total time: 0 minutes
+Times used 1
+
+
+Table #: 2
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 3
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 4
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 5
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 6
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 7
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 8
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 9
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 10
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 11
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+
+
+Table #: 12
+Start time: 0
+End time: 0
+Total time: 0 minutes
+Times used 0
+

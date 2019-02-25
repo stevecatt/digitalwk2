@@ -201,7 +201,9 @@ def clear_all_tables_release():
 
         if table.occupied == True:
             table.release_table()
+            print("*******************************")
             print ("closing all tables")
+            print("*******************************")
 
 def write_to_json():
     pool_tables_as_dict.append(table.__dict__)
@@ -214,7 +216,9 @@ print("*******************************")
 print("Initializing Pool Tables")
 print("*******************************")
 
-for index in range (1,13):
+a= int(input("input number of tables"))+1
+
+for index in range (1,a):
     table = Pooltable(index)
     pool_tables.append(table)
     pool_tables_as_dict.append(table.__dict__)
@@ -280,23 +284,5 @@ write_all_out()
 
 
 
-
-#for table in pool_tables:
- #   if table.occupied == False:
-  #      print(f"Table Number {table.table_number} is Free")
-   # elif table.occupied == True:
-    #    print(f"Table Number {table.table_number} is Occupied")
-
-
-
-    #or table in pool_tables:
-        #if table.occupied == False:
-            #print(f"Table {table.table_number} is Free")
-#view_table_status()
-#select_table()
-#view_table_status()
-#select_table()
-#view_table_status()
-#select_table()
 
 

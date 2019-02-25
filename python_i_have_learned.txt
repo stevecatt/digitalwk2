@@ -1,0 +1,4 @@
+in python you can do math
+in python you can print statements to console
+in python you can store stuff in arrays / lists and dictionaries
+in python you can have classses 

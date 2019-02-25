@@ -1,0 +1,167 @@
+[
+  {
+    "table_number": 1,
+    "occupied": false,
+    "start_time": "18:45:06",
+    "end_time": "18:46:50",
+    "elapsed_time": 1.73,
+    "float_start_time": 1550796306.953801,
+    "float_end_time": 1550796410.5332491,
+    "use_count": 1,
+    "total_use_time": 1.73
+  },
+  {
+    "table_number": 2,
+    "occupied": false,
+    "start_time": "18:45:16",
+    "end_time": "18:45:48",
+    "elapsed_time": 0.53,
+    "float_start_time": 1550796316.3341281,
+    "float_end_time": 1550796348.1690109,
+    "use_count": 1,
+    "total_use_time": 0.53
+  },
+  {
+    "table_number": 3,
+    "occupied": true,
+    "start_time": "18:45:17",
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 1550796317.724128,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 4,
+    "occupied": false,
+    "start_time": "18:45:19",
+    "end_time": "18:46:57",
+    "elapsed_time": 1.63,
+    "float_start_time": 1550796319.120262,
+    "float_end_time": 1550796417.021627,
+    "use_count": 1,
+    "total_use_time": 1.63
+  },
+  {
+    "table_number": 5,
+    "occupied": true,
+    "start_time": "18:45:20",
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 1550796320.0859442,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 6,
+    "occupied": true,
+    "start_time": "18:45:21",
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 1550796321.084816,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 7,
+    "occupied": true,
+    "start_time": "18:45:22",
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 1550796322.118925,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 8,
+    "occupied": true,
+    "start_time": "18:45:23",
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 1550796323.4589021,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 9,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 10,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 11,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 12,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 12,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 12,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  },
+  {
+    "table_number": 12,
+    "occupied": false,
+    "start_time": 0,
+    "end_time": 0,
+    "elapsed_time": 0,
+    "float_start_time": 0,
+    "float_end_time": 0,
+    "use_count": 0,
+    "total_use_time": 0
+  }
+]
